@@ -7,7 +7,15 @@ export interface Project {
 }
 
 export interface ProjectDetails extends Project {
-  pdf_count: number;
+  id: string;
+
+  name: string;
+
+  description: string | null;
+
   note_count: number;
-  node_count: number;
+
+  updated_at: Date;
+
+  total_size?: number;
 }
